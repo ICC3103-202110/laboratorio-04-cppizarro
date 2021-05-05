@@ -1,5 +1,5 @@
 function view(counter){
-    return('\tCount: ' +counter+ '\n\n \t(+) (-) \n\n \t(q) for quit\n');
+    return('\tCount: ' +counter+ '\n\n \t(+) (-) \n\n\n \t(q) for quit\n');
 }
 
 function update(msg, counter){
