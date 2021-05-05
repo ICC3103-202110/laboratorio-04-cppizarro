@@ -4,7 +4,7 @@ function view(counter){
 
 function update(msg, counter){
     if (msg == '+') counter = counter + 1;
-    if (msg == '-') counter= counter - 1; 
+    if (msg == '-') counter = counter - 1; 
     return counter;
 }
 
