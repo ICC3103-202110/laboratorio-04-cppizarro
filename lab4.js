@@ -1,3 +1,5 @@
+
+
 function view(counter){
 
 }
@@ -9,18 +11,24 @@ function update(msg, counter){
 }
 
 function app(counter){
-    while(1){
+    while(true){
         //vista actual
         const currentView = view(counter);
         //limpiar consola
         console.clear();
         //imprimir vista actual
+
         console.log(currentView);
+
         //preguntar y guardar input
-        const msg
+        const prompt = require('prompt-sync')({sigint:true});
+        const msg = prompt('What would you do?');
+
         //actualizar el valor del contador
         counter = update(msg, counter);
         if (msg == 'q') break;
         //el ciclo se repite
     }
 }
+
+app(0)
